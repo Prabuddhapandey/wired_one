@@ -1,0 +1,12 @@
+<div>
+    @switch($currentPage)
+        @case('home')
+            @livewire('home-component')
+            @break
+        @case('users')
+            @livewire('user-component')
+            @break
+        @default
+            @livewire('home-component')
+    @endswitch
+</div>

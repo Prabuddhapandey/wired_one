@@ -55,8 +55,16 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                     Charts
                 </a>
-                <a class="nav-link" href="{{route('user')}}">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+\                <a class="nav-link" href="#" wire:click.prevent="$emit('changePage', 'home')">
+                    <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                    Home
+                </a>
+                <a class="nav-link" href="#" wire:click.prevent="$emit('changePage', 'users')">
+                    <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                    Users
+                </a>
+
+                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                     Tables
                 </a>
             </div>
